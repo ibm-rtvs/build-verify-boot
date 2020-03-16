@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584355173965" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7cbf:1984149904:408339756" type="infrastructure_component_resource" updatedTimestamp="1584355173965" updatedUser="Build Verification" version="1.1">
+   <syncdetails compare="651313679" lastSynced="1584355173965" sourceid="-6be1505e:170e2dbe211:-7cbf">
+      <sourcepath path="servers"/>
+   </syncdetails>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig infrastructureType="http_transport">
+      <recordingSettings colour="90,170,250"/>
+   </resourceConfig>
+</editableResource>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584357884635" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-76a9" type="test_resource" updatedTimestamp="1584363300327" updatedUser="Build Verification" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="-6be1505e:170e2dbe211:-7654" selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags." type="execute_resource_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig childExits="true" description="" executeparallel="false" name=" &quot;Server/rest/projects/createProject/CreateProject&quot;, store results in projectId(%%id%%)" parentWaits="false" subDefault="true" subIndependent="false" subShared="false">
+               <executeReference id="-6be1505e:170e2dbe211:-7dc1" lkname="CreateProject" lkpath="Server/rest/projects/createProject/CreateProject" type="test_resource"/>
+               <outbound>
+                  <binding key="projectId" value="%%id%%"/>
+               </outbound>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="-6be1505e:170e2dbe211:-7618" selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags." type="execute_resource_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig childExits="true" description="" executeparallel="false" name=" &quot;TAM/rest/projects/repositories/create/CreateRepo&quot; with projectId(%%projectId%%), store results in repoId(%%id%%)" parentWaits="false" subDefault="true" subIndependent="false" subShared="false">
+               <executeReference id="-6be1505e:170e2dbe211:-7ab3" lkname="CreateRepo" lkpath="TAM/rest/projects/repositories/create/CreateRepo" type="test_resource"/>
+               <inbound>
+                  <binding key="projectId" value="%%projectId%%"/>
+               </inbound>
+               <outbound>
+                  <binding key="repoId" value="%%id%%"/>
+               </outbound>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="-6be1505e:170e2dbe211:-72f0" selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags." type="execute_resource_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig childExits="true" description="" executeparallel="false" name=" &quot;TAM/rest/projects/assets/find/GetAssetId&quot; with assetName(%%apiAssetName%%),  projectId(%%projectId%%),  desktopProjectId(00000170-e2ab-e791-0001-41cd2abccd04), store results in apiAssertId(%%id%%),  apiAssertType(%%type%%),  apiAssertPath(%%path%%)" parentWaits="false" subDefault="true" subIndependent="false" subShared="false">
+               <executeReference id="-6be1505e:170e2dbe211:-748c" lkname="GetAssetId" lkpath="TAM/rest/projects/assets/find/GetAssetId" type="test_resource"/>
+               <inbound>
+                  <binding key="assetName" value="%%apiAssetName%%"/>
+                  <binding key="projectId" value="%%projectId%%"/>
+                  <binding key="desktopProjectId" value="00000170-e2ab-e791-0001-41cd2abccd04"/>
+               </inbound>
+               <outbound>
+                  <binding key="apiAssertId" value="%%id%%"/>
+                  <binding key="apiAssertType" value="%%type%%"/>
+                  <binding key="apiAssertPath" value="%%path%%"/>
+               </outbound>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="-6be1505e:170e2dbe211:-69d8" selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags." type="execute_resource_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig childExits="true" description="" executeparallel="false" name=" &quot;Execution/rest/projects/jobs/createJob/CreateAPIJob&quot; with assetId(%%apiAssertId%%),  projectId(%%projectId%%),  assertPath(%%apiAssertPath%%),  assertType(%%apiAssertType%%),  assetName(%%apiAssetName%%)" parentWaits="false" subDefault="true" subIndependent="false" subShared="false">
+               <executeReference id="-6be1505e:170e2dbe211:-6bbd" lkname="CreateAPIJob" lkpath="Execution/rest/projects/jobs/createJob/CreateAPIJob" type="test_resource"/>
+               <inbound>
+                  <binding key="assetId" value="%%apiAssertId%%"/>
+                  <binding key="projectId" value="%%projectId%%"/>
+                  <binding key="assertPath" value="%%apiAssertPath%%"/>
+                  <binding key="assertType" value="%%apiAssertType%%"/>
+                  <binding key="assetName" value="%%apiAssetName%%"/>
+               </inbound>
+            </resourceConfig>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="NONE" outputMode="NONE">
+         <tag defaultValue="" description="" name="projectId"/>
+         <tag defaultValue="" description="" name="apiAssertType"/>
+         <tag defaultValue="" description="" name="apiAssertId"/>
+         <tag defaultValue="" description="" name="apiAssertPath"/>
+         <tag defaultValue="" description="" name="repoId"/>
+         <tag defaultValue="All" description="" name="apiAssetName"/>
+      </tagDataStore>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>

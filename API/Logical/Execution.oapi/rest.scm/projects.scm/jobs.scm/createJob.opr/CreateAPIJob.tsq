@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584360912842" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-6bbd" type="test_resource" updatedTimestamp="1584365777357" updatedUser="Build Verification" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="-6be1505e:170e2dbe211:-6bbb" selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly." type="send_request_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; on resource &quot;/rest/projects/%%projectId%%/jobs/&quot; using schema &quot;Text&quot; via &quot;HTTPS&quot;" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
+               <headerMessage assocdefid="Http Publish" meTy="Message" name="" sch="Http Publish" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c meTy="String" name="Method" sch="Http Publish" type="7" value="POST" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="POST" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="URL" sch="Http Publish" type="7" value="/rest/projects/%%projectId%%/jobs/" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="/rest/projects/%%projectId%%/jobs/" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="Message" name="httpDetails" sch="Http Publish" type="12" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                     <_c meTy="String" name="Version" sch="Http Publish" type="7" value="" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                     <_c meTy="Message" name="httpHeaders" sch="Http Publish" type="12" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction enabled="false" type="1">
+                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="accept" sch="Http Publish" type="7" value="*/*" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction type="0">
+                                 <fieldAction exp="*/*" type="0"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="content-type" sch="Http Publish" type="7" value="application/json" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction type="0">
+                                 <fieldAction exp="application/json" type="0"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                        </_c>
+                     </_c>
+                     <_c meTy="Boolean" name="followRedirects" sch="Http Publish" type="8" value="true" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction type="0">
+                              <fieldAction exp="true" type="0"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                  </_c>
+                  <_c meTy="String" name="MessageType" sch="Http Publish" type="7" value="http.text.message.type" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction exp="http.text.message.type" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </headerMessage>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="JSON.nodeformatter" sch="Text" type="12" version="1.2">
+                     <fieldExpander fieldExpanderID="JSON.fieldexpander" fieldSchema="JSON" fieldSchemaRoot="Object"/>
+                     <contentTree>{"type":"%%assertType%%","ritEnv":"local","repoid":"%%assetId%%","offlineToken":"%%refresh_token%%","filepath":"%%assertPath%%","assetName":"%%assetName%%","branchName":"master"}<defaultActions>
+                           <defaultMessageActions>
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                                 <fieldAction type="0">
+                                    <fieldAction type="100"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="5"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultMessageActions>
+                           <defaultScalarActions>
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="0"/>
+                                 </fieldAction>
+                                 <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="5"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultScalarActions>
+                        </defaultActions>
+                        <updates>
+                           <updateField path="/text/Object">
+                              <_c assocdefid="Object"/>
+                           </updateField>
+                        </updates>
+                     </contentTree>
+                     <fieldActionGroup>
+                        <fieldAction type="0">
+                           <fieldAction type="4"/>
+                        </fieldAction>
+                        <fieldAction enabled="false" type="1">
+                           <fieldAction enabled="false" type="7"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="-6be1505e:170e2dbe211:-6bb7" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="-6be1505e:170e2dbe211:-6bbb" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
+               <headerMessage assocdefid="Http Receive Reply" meTy="Message" name="" sch="Http Receive Reply" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction type="1">
+                        <fieldAction anyOrder="true" ignoreExtra="true" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c meTy="String" name="StatusCode" sch="Http Receive Reply" type="7" version="1.2">
+                     <fieldActionGroup>
+                        <fieldAction type="1">
+                           <fieldAction exp="201" type="0"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+                  <_c meTy="String" name="ReasonPhrase" sch="Http Receive Reply" type="7" version="1.2"/>
+                  <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2"/>
+                  <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2"/>
+               </headerMessage>
+               <subconfig MessageType="http.text.message.type" _version="1.1" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
+               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
+                  <fieldActionGroup>
+                     <fieldAction type="1">
+                        <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                     </fieldAction>
+                  </fieldActionGroup>
+                  <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="JSON.nodeformatter" sch="Text" type="12" version="1.2">
+                     <fieldExpander fieldExpanderID="JSON.fieldexpander" fieldSchema="JSON" fieldSchemaRoot="Object"/>
+                     <contentTree>{"id":null,"status":"IN_TRANSITION"}<defaultActions>
+                           <defaultMessageActions>
+                              <fieldActionGroup>
+                                 <fieldAction type="1">
+                                    <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultMessageActions>
+                           <defaultScalarActions>
+                              <fieldActionGroup>
+                                 <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                 </fieldAction>
+                                 <fieldAction type="1">
+                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </defaultScalarActions>
+                        </defaultActions>
+                        <updates>
+                           <setAction index="0" path="/text/Object" replaceActionType="100" replaceOuterType="1">
+                              <fieldAction type="1">
+                                 <fieldAction anyOrder="true" ignoreExtra="true" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </setAction>
+                           <updateField path="/text/Object">
+                              <_c assocdefid="Object"/>
+                           </updateField>
+                           <setAction index="0" path="/text/Object/id" replaceActionType="0" replaceOuterType="1">
+                              <fieldAction type="1">
+                                 <fieldAction type="9"/>
+                              </fieldAction>
+                           </setAction>
+                           <setAction index="0" path="/text/Object/id">
+                              <fieldAction description="Store copy of field in tag 'id'" tN="id" type="2">
+                                 <dataAction type="Copy"/>
+                              </fieldAction>
+                           </setAction>
+                           <setAction index="1" path="/text/Object/status">
+                              <fieldAction description="Store copy of field in tag 'status'" tN="status" type="2">
+                                 <dataAction type="Copy"/>
+                              </fieldAction>
+                           </setAction>
+                        </updates>
+                     </contentTree>
+                     <fieldActionGroup>
+                        <fieldAction type="1">
+                           <fieldAction type="7"/>
+                        </fieldAction>
+                        <fieldAction type="0">
+                           <fieldAction type="4"/>
+                        </fieldAction>
+                     </fieldActionGroup>
+                  </_c>
+               </bodyMessage>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="45715af3:170e35c8902:-7718" selfDescribing="Repeat test steps while a specified condition is true." type="iterate_while_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" disableMappings="false" iterationContributor="false" maxIterationTime="0.0" maxIterationTimeExceededFailsTest="false" maxTotalIterationTime="600.0" maxTotalIterationTimeExceededFailsTest="false" name="tags[&quot;status&quot;] === &quot;IN_TRANSITION&quot;" option="OTHER" pacingtime="5.0" pacingtype="DELAY_BETWEEN_TESTS" performanceDisableValidation="false" performanceInstances="1" performanceInterleave="false" performanceMaximumIterationTime="0" performanceMaximumTestTime="0" performanceUseMaximumIterationTime="false" performanceUseMaximumTestTime="false" remoteAgent="" reportingLogIterations="1" reportingLogLogMessages="8" reportingLogMessages="4" reportingLogScriptExitCodes="8" reportingLogScriptOutput="8" reportingLogTagValues="8" reportingLogTimes="8" runSettingsContinueOnFail="true" runSettingsDelayEnabled="false" runSettingsDelayType="Fixed Delay" runSettingsIterations="" runSettingsMaximumDelayValue="0" runSettingsMinimumDelayValue="0" runSettingsRunFor="0" runSettingsRunType="Once Only" runSettingsTestDescription="" script="tags[&quot;status&quot;] === &quot;IN_TRANSITION&quot;" type="script:ECMAScript" useMaxIterationTime="false" useMaxTotalIterationTime="true" usepacing="true">
+               <mapper disableFiltersWhenEmpty="false" knownColumns="" noAutoMap=""/>
+               <testTree>
+                  <editableResource id="45715af3:170e35c8902:-7717" selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags." type="execute_resource_action" version="1.0">
+                     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                     <resourceConfig childExits="true" description="" executeparallel="false" name=" &quot;Execution/rest/projects/jobs/getJob/GetJobStatus&quot; with id(%%id%%),  projectId(%%projectId%%), store results in status(%%status%%),  message(%%message%%)" parentWaits="false" subDefault="true" subIndependent="false" subShared="false">
+                        <executeReference id="45715af3:170e35c8902:-76e6" lkname="GetJobStatus" lkpath="Execution/rest/projects/jobs/getJob/GetJobStatus" type="test_resource"/>
+                        <inbound>
+                           <binding key="id" value="%%id%%"/>
+                           <binding key="projectId" value="%%projectId%%"/>
+                        </inbound>
+                        <outbound>
+                           <binding key="status" value="%%status%%"/>
+                           <binding key="message" value="%%message%%"/>
+                        </outbound>
+                     </resourceConfig>
+                  </editableResource>
+               </testTree>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="45715af3:170e35c8902:-72ef" selfDescribing="The log actions enables you to output messages to console and a logging file." type="logging_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig append="true" description="" flush="true" loggingMessage="Job status is: %%status%% %%message%%&#13;&#10;Further info at: https://%%ingress_host%%/rest/projects/%%projectId%%/jobs/%%id%%" name="Job status is: %%status%% %%message%%" outputFile="" role="0"/>
+         </editableResource>
+         <editableResource id="45715af3:170e35c8902:-763d" selfDescribing="Choose evaluation expressions to determine test execution flow. Use predefined functions, custom plug-ins and tagged data. If the functions pass then the test will continue to execute; otherwise the test will fail." type="assert_true_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" name="tags[&quot;status&quot;] === &quot;COMPLETE&quot;" option="OTHER" script="tags[&quot;status&quot;] === &quot;COMPLETE&quot;" type="script:ECMAScript"/>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="SELECT" outputMode="NONE">
+         <tag defaultValue="" description="" name="assertType">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="" description="" name="assertPath">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="" description="" name="id"/>
+         <tag defaultValue="" description="" name="projectId">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="" description="" name="status"/>
+         <tag defaultValue="" description="" name="assetId">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="" description="" name="message"/>
+         <tag defaultValue="" description="" name="assetName">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+            </tagProps>
+         </tag>
+      </tagDataStore>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>

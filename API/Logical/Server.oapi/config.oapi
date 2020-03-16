@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584354217392" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7ec7" selfDescribing="no-name" syncSourceDetails="7f8cd6b9:170e2d43262:-7f6a" type="openapi_definition" updatedTimestamp="1584354217411" updatedUser="Build Verification" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig locationtype="102">
+      <locationURI>https://%%ingress_host%%/v2/api-docs</locationURI>
+   </resourceConfig>
+</editableResource>

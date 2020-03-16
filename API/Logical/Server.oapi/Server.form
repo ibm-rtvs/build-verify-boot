@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584354251386" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7ec7:0:-1716782310" selfDescribing="api-docs" type="form_urlencoded" updatedTimestamp="1584354251386" updatedUser="Build Verification" version="1.0">
+   <syncdetails compare="1584354219504" lastSynced="1584354251386" sourceid="-6be1505e:170e2dbe211:-7ec7"/>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig schemaSourceTemplateName="form_urlencoded">
+      <schemaSourceConfig sourceType="102" uri="https://dev.apps-crc.testing/v2/api-docs">
+         <root allowAdditional="false" id="POST /rest/tokens/">
+            <element name="refresh_token" optional="true"/>
+         </root>
+      </schemaSourceConfig>
+   </resourceConfig>
+</editableResource>

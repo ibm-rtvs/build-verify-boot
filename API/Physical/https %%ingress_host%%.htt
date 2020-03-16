@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584354251870" createdUser="PETER.TAYLOR" id="-6be1505e:170e2dbe211:-7ec7:-469035857:1544155186" selfDescribing="https %%ingress_host%%" type="http_transport" updatedTimestamp="1584354461907" updatedUser="PETER.TAYLOR" version="1.0">
+   <syncdetails compare="-783829843" lastSynced="1584354251870" sourceid="-6be1505e:170e2dbe211:-7ec7">
+      <sourcepath path="servers"/>
+      <sourcepath path="url"/>
+   </syncdetails>
+   <documentation>
+      <description value="Generated server url"/>
+   </documentation>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="" credPreemptive="false" credType="0" credUser="" httpHost="%%ingress_host%%" httpNtlmDomain="" httpPort="443" httpProxyHost="" httpProxyPassword="" httpProxyPort="" httpProxyUsername="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="true" version="4">
+         <kerberos Anon="false" Conf="false" Custom="true" Enabled="false" Integ="false" KDC="" Loc="" MutAuth="false" Principal="" Pwd="" Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+         <oauth clientassertion="" clientid="" clientsecret="" enabled="true" refreshtoken="%%refresh_token%%" scopes="" tokenendpoint="/rest/tokens/"/>
+         <serverAuthentication>
+            <authenticationConfig enabled="false" realm="" type="1"/>
+            <authenticationConfig algorithm="" authParams="" domain="" enabled="false" nonce="false" opaque="" qop="" realm="" stale="" type="2"/>
+            <authenticationConfig enabled="false" type="3"/>
+            <authenticationConfig enabled="false" type="5"/>
+         </serverAuthentication>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584355091566" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7cbf" selfDescribing="tam" syncSourceDetails="7f8cd6b9:170e2d43262:-7f6a" type="openapi_definition" updatedTimestamp="1584355091577" updatedUser="Build Verification" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig locationtype="101">
+      <location>%%SYSTEM_PROJECT_ROOT%%Schemas/tam.json</location>
+   </resourceConfig>
+</editableResource>

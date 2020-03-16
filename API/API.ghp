@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><_c buildID="I20200228_1557" certificateAuthority="KEY_1024_BITS" comments="Project created on 16 March 2020" creationVersion="10.0.2" domain="default" extDocPrefix="" name="API" owner="Build Verification" rulesCacheUri="%%PROJECT/ROOT%%Rules" uuid="00000170-e2d4-3147-0001-4433ee7165f8">
+   <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
+      <environmentVariable evdescription="" key="ingress_host" value=""/>
+      <environmentVariable evdescription="" key="refresh_token" value=""/>
+      <environmentVariable evdescription="" key="Server/AddOn-Registration-APIKey/AddOn-Registration-APIKey" value=""/>
+   </rootEnvironmentConfig>
+   <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
+   <serverSettings ghRepositoryURL="https://localhost:5443/RTCP" trustSource="INBUILT_CA" trustStorePath="">
+      <dbConnectionParameters maxConnections="5" poolName="DefaultPoolName">
+         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="" password="" recordFilters="" schema="" url="" useSsl="false" user="">
+            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
+            <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
+         </connectionParams>
+      </dbConnectionParameters>
+      <automationServer enabled="false" hostname="" port="443" projectId="-1" projectName="--No Project Selected--" publishResults="false" trustSource="TRUST_ALL" trustStorePath=""/>
+   </serverSettings>
+   <permissionsSettings autoLogin="true" host="" permFactId="ldap.permissions.factory.none" port="389" pswd=""/>
+</_c>
