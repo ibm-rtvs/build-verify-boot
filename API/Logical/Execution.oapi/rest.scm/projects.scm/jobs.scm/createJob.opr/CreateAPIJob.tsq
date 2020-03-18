@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584360912842" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-6bbd" type="test_resource" updatedTimestamp="1584365777357" updatedUser="Build Verification" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584360912842" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-6bbd" type="test_resource" updatedTimestamp="1584549517015" updatedUser="Build Verification" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -137,7 +137,7 @@
          </editableResource>
          <editableResource id="-6be1505e:170e2dbe211:-6bb7" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
             <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="-6be1505e:170e2dbe211:-6bbb" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
+            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot; timeout 15000ms" sendRequestID="-6be1505e:170e2dbe211:-6bbb" timeout="15000" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
                <headerMessage assocdefid="Http Receive Reply" meTy="Message" name="" sch="Http Receive Reply" type="12" version="1.2">
                   <fieldActionGroup>
                      <fieldAction type="1">
