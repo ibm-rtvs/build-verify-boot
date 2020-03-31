@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584355173994" createdUser="PETER.TAYLOR" id="-6be1505e:170e2dbe211:-7cbf:0:-332410441" selfDescribing="TAM - REST APIs" type="parameterized_url_schema" updatedTimestamp="1584355173994" updatedUser="PETER.TAYLOR" version="1.0">
-   <syncdetails compare="1584355092294" lastSynced="1584355173994" sourceid="-6be1505e:170e2dbe211:-7cbf"/>
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584355173994" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7cbf:0:-332410441" selfDescribing="TAM - REST APIs" type="parameterized_url_schema" updatedTimestamp="1585655600071" updatedUser="Build Verification" version="1.0">
+   <syncdetails compare="1585655479309" lastSynced="1585655600071" sourceid="-6be1505e:170e2dbe211:-7cbf"/>
    <documentation>
       <description value="Rest APIs for the TAM micro-service"/>
    </documentation>
@@ -16,11 +16,26 @@
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="assets" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="branch" queryName="branch" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="revision" queryName="revision" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="assetTypes" queryName="assetTypes" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="desktopProjectId" queryName="desktopProjectId" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="externalTypes" queryName="externalTypes" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="name" queryName="name" type="7"/>
+         </url>
+         <url templateName="POST /rest/projects/{projectId}/assets/">
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="assets" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="branch" queryName="branch" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="assetId" queryName="assetId" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="path" queryName="path" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="message" queryName="message" type="7"/>
          </url>
          <url templateName="GET /rest/projects/{projectId}/assets/{assetId}/{branch}/">
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
@@ -37,7 +52,7 @@
             <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="branch" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
          </url>
-         <url templateName="GET /rest/projects/{projectId}/assets/{assetId}/{branch}/dependencies/">
+         <url templateName="GET /rest/projects/{projectId}/assets/{assetId}/{revision}/dependencies/">
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
@@ -49,14 +64,14 @@
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="branch" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="revision" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="dependencies" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="assetTypes" queryName="assetTypes" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="include" queryName="include" type="7"/>
          </url>
-         <url templateName="GET /rest/projects/{projectId}/assets/{assetId}/{branch}/content/">
+         <url templateName="GET /rest/projects/{projectId}/assets/{assetId}/{revision}/content/">
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
@@ -68,7 +83,7 @@
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="branch" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="revision" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="content" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
@@ -92,7 +107,7 @@
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="message" queryName="message" type="7"/>
          </url>
-         <url templateName="PATCH /rest/projects/{projectId}/assets/content/">
+         <url templateName="PATCH /rest/projects/{projectId}/assets/{assetId}/content/">
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
@@ -102,12 +117,13 @@
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="assets" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="content" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="rootAssetId" queryName="rootAssetId" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="branch" queryName="branch" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="message" queryName="message" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="patchName" queryName="patchName" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="false" literalValue="" parameterName="patchName" queryName="patchName" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="patchContentType" queryName="patchContentType" type="7"/>
          </url>
          <url templateName="GET /rest/projects/{projectId}/assets/{assetId}/commits/">
@@ -125,6 +141,88 @@
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="commits" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="branch" queryName="branch" type="7"/>
+         </url>
+         <url templateName="GET /rest/projects/{projectId}/volumes/">
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="volumes" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="branch" queryName="branch" type="7"/>
+         </url>
+         <url templateName="GET /rest/projects/{projectId}/volumes/{assetId}/">
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="volumes" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="branch" queryName="branch" type="7"/>
+         </url>
+         <url templateName="GET /rest/projects/{projectId}/edits/">
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="refs" queryName="refs" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="identity" queryName="identity" type="7"/>
+         </url>
+         <url templateName="PATCH /rest/projects/{projectId}/edits/">
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="edit" queryName="edit" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="targetBranch" queryName="targetBranch" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="message" queryName="message" type="7"/>
+         </url>
+         <url templateName="GET /rest/projects/{projectId}/edits/{assetId}/">
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="targetBranch" queryName="targetBranch" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="identity" queryName="identity" type="7"/>
+         </url>
+         <url templateName="DELETE /rest/projects/{projectId}/edits/{assetId}/">
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
+            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
+            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="targetBranch" queryName="targetBranch" type="7"/>
          </url>
          <url templateName="GET /rest/projects/{projectId}/branches/">
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
@@ -248,102 +346,6 @@
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="webhook" parameterName="" type="7"/>
             <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-         </url>
-         <url templateName="GET /testassets/rest/projects/{projectId}/volumes/">
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="testassets" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="volumes" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="page" queryName="page" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="ref" queryName="ref" type="7"/>
-         </url>
-         <url templateName="GET /testassets/rest/projects/{projectId}/volumes/{assetId}/">
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="testassets" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="volumes" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="basePath" queryName="basePath" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="maxDepth" queryName="maxDepth" type="2"/>
-         </url>
-         <url templateName="GET /testassets/rest/projects/{projectId}/edits/">
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="testassets" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="refs" queryName="refs" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="identity" queryName="identity" type="7"/>
-         </url>
-         <url templateName="PATCH /testassets/rest/projects/{projectId}/edits/">
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="testassets" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="edit" queryName="edit" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="targetBranch" queryName="targetBranch" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="message" queryName="message" type="7"/>
-         </url>
-         <url templateName="GET /testassets/rest/projects/{projectId}/edits/{assetId}/">
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="testassets" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="targetBranch" queryName="targetBranch" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="identity" queryName="identity" type="7"/>
-         </url>
-         <url templateName="DELETE /testassets/rest/projects/{projectId}/edits/{assetId}/">
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="testassets" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="rest" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="projects" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="projectId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="edits" parameterName="" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <path isExpandable="true" isParameterized="true" isParticipateToExpension="true" literal="" parameterName="assetId" type="7"/>
-            <path isExpandable="false" isParameterized="false" isParticipateToExpension="true" literal="/" parameterName="" type="7"/>
-            <query isNameValuePair="true" isParameterized="true" isRequired="true" literalValue="" parameterName="targetBranch" queryName="targetBranch" type="7"/>
          </url>
       </schemaSourceConfig>
    </resourceConfig>

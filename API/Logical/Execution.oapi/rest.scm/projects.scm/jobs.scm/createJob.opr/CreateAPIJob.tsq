@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584360912842" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-6bbd" type="test_resource" updatedTimestamp="1584549926920" updatedUser="Build Verification" version="1.1">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584360912842" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-6bbd" type="test_resource" updatedTimestamp="1585656671847" updatedUser="Build Verification" version="1.1">
    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
    <resourceConfig description="" name="">
       <testTree>
@@ -83,7 +83,7 @@
                   </fieldActionGroup>
                   <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="JSON.nodeformatter" sch="Text" type="12" version="1.2">
                      <fieldExpander fieldExpanderID="JSON.fieldexpander" fieldSchema="JSON" fieldSchemaRoot="Object"/>
-                     <contentTree>{"type":"%%assertType%%","ritEnv":"local","repoid":"%%assetId%%","offlineToken":"%%refresh_token%%","filepath":"%%assertPath%%","assetName":"%%assetName%%","branchName":"master"}<defaultActions>
+                     <contentTree>{"type":"%%assertType%%","ritEnv":"local","repoid":"%%assetId%%","offlineToken":"%%refresh_token%%","filepath":"%%assertPath%%","assetName":"%%assetName%%","branchName":"%%repo_branch%%"}<defaultActions>
                            <defaultMessageActions>
                               <fieldActionGroup>
                                  <fieldAction enabled="false" type="1">
@@ -155,7 +155,7 @@
                   <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2"/>
                   <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2"/>
                </headerMessage>
-               <subconfig MessageType="http.text.message.type" _version="1.1" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
+               <subconfig MessageType="http.text.message.type" URL="" _version="1.1" allowSubPath="false" consumerType="Participate" filterHeaders="false" filterMethod="false" filterResourcePath="false" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
                <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
                   <fieldActionGroup>
                      <fieldAction type="1">

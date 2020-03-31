@@ -2,6 +2,7 @@
    <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
       <environmentVariable evdescription="" key="ingress_host" value=""/>
       <environmentVariable evdescription="" key="refresh_token" value=""/>
+      <environmentVariable evdescription="" key="repo_branch" value=""/>
       <environmentVariable evdescription="" key="Server/AddOn-Registration-APIKey/AddOn-Registration-APIKey" value=""/>
    </rootEnvironmentConfig>
    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>

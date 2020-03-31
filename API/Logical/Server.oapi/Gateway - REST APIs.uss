@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584354251407" createdUser="PETER.TAYLOR" id="-6be1505e:170e2dbe211:-7ec7:0:-332410441" selfDescribing="Gateway - REST APIs" type="parameterized_url_schema" updatedTimestamp="1584354251407" updatedUser="PETER.TAYLOR" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584354251407" createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7ec7:0:-332410441" selfDescribing="Gateway - REST APIs" type="parameterized_url_schema" updatedTimestamp="1584354251407" updatedUser="Build Verification" version="1.0">
    <syncdetails compare="1584354219503" lastSynced="1584354251407" sourceid="-6be1505e:170e2dbe211:-7ec7"/>
    <documentation>
       <description value="Rest APIs for the gateway micro-service"/>
