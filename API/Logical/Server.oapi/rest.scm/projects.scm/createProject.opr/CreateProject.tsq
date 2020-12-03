@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1584354303462"
     createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7dc1"
-    type="test_resource" updatedTimestamp="1605095446417"
-    updatedUser="brandon.chancusi" version="1.1">
+    type="test_resource" updatedTimestamp="1606995407898"
+    updatedUser="Build Verification" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -247,8 +247,9 @@
                 type="receive_reply_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                 <resourceConfig description="" formatter="HTTP_Message"
-                    name="&quot;Text&quot; using schema &quot;Text&quot;"
-                    sendRequestID="-6be1505e:170e2dbe211:-7dbf" transport="-6be1505e:170e2dbe211:-7ec7:1984149904:408339756">
+                    name="&quot;Text&quot; using schema &quot;Text&quot; timeout %%timeout%%ms"
+                    sendRequestID="-6be1505e:170e2dbe211:-7dbf"
+                    timeout="%%timeout%%" transport="-6be1505e:170e2dbe211:-7ec7:1984149904:408339756">
                     <headerMessage assocdefid="Http Receive Reply"
                         meTy="Message" name="" sch="Http Receive Reply"
                         type="12" version="1.2">
@@ -269,6 +270,10 @@
                         </_c>
                         <_c meTy="String" name="ReasonPhrase"
                             sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="String" name="MessageType"
+                            sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="Http Receive Reply" type="11" version="1.2"/>
                         <_c meTy="Message" name="httpDetails"
                             sch="Http Receive Reply" type="12" version="1.2">
                             <fieldActionGroup>
@@ -296,10 +301,6 @@
                                 optional="true" sch="Http Receive Reply"
                                 type="8" version="1.2"/>
                         </_c>
-                        <_c meTy="String" name="MessageType"
-                            sch="Http Receive Reply" type="7" version="1.2"/>
-                        <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
                     </headerMessage>
                     <subconfig MessageType="http.text.message.type"
                         _version="1.1" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-7ec7:1984149904:408339756"/>
