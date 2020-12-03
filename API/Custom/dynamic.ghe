@@ -1,13 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584353522750" createdUser="Build Verification" id="7f8cd6b9:170e2d43262:-7f6a" type="environment_resource" updatedTimestamp="1585656655734" updatedUser="Build Verification" version="1.0">
-   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-   <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
-      <environmentVariable evdescription="" key="ingress_host" value=""/>
-      <environmentVariable evdescription="" key="refresh_token" value=""/>
-      <environmentVariable evdescription="" key="repo_branch" value="master"/>
-      <evbindings>
-         <evbinding evLogicalItemId="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756" evPhysicalItemId="-6be1505e:170e2dbe211:-7ec7:-469035857:1544155186"/>
-         <evbinding evLogicalItemId="-6be1505e:170e2dbe211:-7cbf:1984149904:408339756" evPhysicalItemId="-6be1505e:170e2dbe211:-7ec7:-469035857:1544155186"/>
-         <evbinding evLogicalItemId="-6be1505e:170e2dbe211:-7ec7:1984149904:408339756" evPhysicalItemId="-6be1505e:170e2dbe211:-7ec7:-469035857:1544155186"/>
-      </evbindings>
-   </resourceConfig>
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1584353522750"
+    createdUser="Build Verification" id="7f8cd6b9:170e2d43262:-7f6a"
+    type="environment_resource" updatedTimestamp="1607010288410"
+    updatedUser="Build Verification" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
+        <environmentVariable evdescription="" key="ingress_host" value=""/>
+        <environmentVariable evdescription="" key="refresh_token" value=""/>
+        <environmentVariable evdescription="" key="repo_branch" value="master"/>
+        <environmentVariable evdescription="" key="timeout" value="30000"/>
+        <evbindings>
+            <evbinding
+                evLogicalItemId="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756" evPhysicalItemId="-6be1505e:170e2dbe211:-7ec7:-469035857:1544155186"/>
+            <evbinding
+                evLogicalItemId="-6be1505e:170e2dbe211:-7cbf:1984149904:408339756" evPhysicalItemId="-6be1505e:170e2dbe211:-7ec7:-469035857:1544155186"/>
+            <evbinding
+                evLogicalItemId="-6be1505e:170e2dbe211:-7ec7:1984149904:408339756" evPhysicalItemId="-6be1505e:170e2dbe211:-7ec7:-469035857:1544155186"/>
+        </evbindings>
+    </resourceConfig>
 </editableResource>

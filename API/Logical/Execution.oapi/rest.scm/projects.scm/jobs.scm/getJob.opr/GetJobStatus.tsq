@@ -1,234 +1,317 @@
-<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1584364079785" createdUser="Build Verification" id="45715af3:170e35c8902:-76e6" type="test_resource" updatedTimestamp="1584365714567" updatedUser="Build Verification" version="1.1">
-   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-   <resourceConfig description="" name="">
-      <testTree>
-         <editableResource id="45715af3:170e35c8902:-76e4" selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly." type="send_request_action" version="1.1">
-            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; on resource &quot;/rest/projects/{projid}/jobs/{jobId}&quot; using schema &quot;Text&quot; via &quot;HTTPS&quot;" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
-               <headerMessage meTy="Message" type="12" version="1.2">
-                  <fieldActionGroup>
-                     <fieldAction enabled="false" type="1">
-                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                     </fieldAction>
-                  </fieldActionGroup>
-                  <_c meTy="String" name="MessageType" type="7" value="http.text.message.type" version="1.2">
-                     <fieldActionGroup>
-                        <fieldAction type="0">
-                           <fieldAction exp="http.text.message.type" type="0"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                  </_c>
-                  <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
-                     <fieldActionGroup>
-                        <fieldAction type="0">
-                           <fieldAction exp="GET" type="0"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                  </_c>
-                  <_c meTy="String" name="URL" type="7" value="/rest/projects/{projid}/jobs/{jobId}" version="1.2">
-                     <fieldActionGroup>
-                        <fieldAction type="0">
-                           <fieldAction exp="/rest/projects/{projid}/jobs/{jobId}" type="0"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                  </_c>
-                  <_c meTy="Message" name="httpDetails" type="12" version="1.2">
-                     <fieldActionGroup>
-                        <fieldAction enabled="false" type="1">
-                           <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                     <_c meTy="String" name="Version" type="7" value="" version="1.2">
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1584364079785"
+    createdUser="Build Verification" id="45715af3:170e35c8902:-76e6"
+    type="test_resource" updatedTimestamp="1607009929286"
+    updatedUser="Build Verification" version="1.1">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="45715af3:170e35c8902:-76e4"
+                selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
+                type="send_request_action" version="1.1">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; on resource &quot;/rest/projects/{projid}/jobs/{jobId}&quot; using schema &quot;Text&quot; via &quot;HTTPS&quot;" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
+                    <headerMessage meTy="Message" type="12" version="1.2">
                         <fieldActionGroup>
-                           <fieldAction type="0">
-                              <fieldAction type="0"/>
-                           </fieldAction>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
                         </fieldActionGroup>
-                     </_c>
-                     <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
-                        <fieldActionGroup>
-                           <fieldAction enabled="false" type="1">
-                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                           </fieldAction>
-                        </fieldActionGroup>
-                        <_c meTy="String" name="Accept" type="7" value="*/*" version="1.2">
-                           <fieldActionGroup>
-                              <fieldAction type="0">
-                                 <fieldAction exp="*/*" type="0"/>
-                              </fieldAction>
-                           </fieldActionGroup>
+                        <_c meTy="String" name="MessageType" type="7"
+                            value="http.text.message.type" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
                         </_c>
-                     </_c>
-                     <_c meTy="Boolean" name="followRedirects" type="8" value="true" version="1.2">
-                        <fieldActionGroup>
-                           <fieldAction type="0">
-                              <fieldAction exp="true" type="0"/>
-                           </fieldAction>
-                        </fieldActionGroup>
-                     </_c>
-                  </_c>
-               </headerMessage>
-               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
-                  <fieldActionGroup>
-                     <fieldAction enabled="false" type="1">
-                        <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                     </fieldAction>
-                  </fieldActionGroup>
-                  <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="rest_nodeformatter" sch="Text" type="12" version="1.2">
-                     <fieldExpander fieldExpanderID="rest_fieldexpander" fieldSchema="-6be1505e:170e2dbe211:-6ce9:0:-332410441" fieldSchemaRoot="GET /rest/projects/{projid}/jobs/{jobId}"/>
-                     <fieldActionGroup>
-                        <fieldAction type="0">
-                           <fieldAction type="4"/>
-                        </fieldAction>
-                        <fieldAction enabled="false" type="1">
-                           <fieldAction enabled="false" type="7"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                     <_c assocdefid="GET /rest/projects/{projid}/jobs/{jobId}" name="GET /rest/projects/{projid}/jobs/{jobId}" sch="-6be1505e:170e2dbe211:-6ce9:0:-332410441" type="12" version="1.2">
-                        <fieldActionGroup>
-                           <fieldAction enabled="false" type="1">
-                              <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                           </fieldAction>
-                        </fieldActionGroup>
-                        <_c name="projid" sch="-6be1505e:170e2dbe211:-6ce9:0:-332410441" type="3" version="1.2">
-                           <fieldActionGroup>
-                              <fieldAction type="0">
-                                 <fieldAction exp="%%projectId%%" type="0"/>
-                              </fieldAction>
-                           </fieldActionGroup>
+                        <_c meTy="String" name="Method" type="7"
+                            value="GET" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction exp="GET" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
                         </_c>
-                        <_c name="jobId" sch="-6be1505e:170e2dbe211:-6ce9:0:-332410441" type="7" version="1.2">
-                           <fieldActionGroup>
-                              <fieldAction type="0">
-                                 <fieldAction exp="%%id%%" type="0"/>
-                              </fieldAction>
-                           </fieldActionGroup>
+                        <_c meTy="String" name="URL" type="7"
+                            value="/rest/projects/{projid}/jobs/{jobId}" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="/rest/projects/{projid}/jobs/{jobId}" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
                         </_c>
-                     </_c>
-                  </_c>
-               </bodyMessage>
-            </resourceConfig>
-         </editableResource>
-         <editableResource id="45715af3:170e35c8902:-76e0" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
-            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-            <resourceConfig description="" formatter="HTTP_Message" name="&quot;Text&quot; using schema &quot;Text&quot;" sendRequestID="45715af3:170e35c8902:-76e4" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
-               <headerMessage assocdefid="Http Receive Reply" meTy="Message" name="" sch="Http Receive Reply" type="12" version="1.2">
-                  <fieldActionGroup>
-                     <fieldAction type="1">
-                        <fieldAction anyOrder="true" ignoreExtra="true" ignoreNonPresent="false" type="100"/>
-                     </fieldAction>
-                  </fieldActionGroup>
-                  <_c meTy="String" name="StatusCode" sch="Http Receive Reply" type="7" version="1.2">
-                     <fieldActionGroup>
-                        <fieldAction type="1">
-                           <fieldAction exp="200" type="0"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                  </_c>
-                  <_c meTy="String" name="ReasonPhrase" sch="Http Receive Reply" type="7" version="1.2"/>
-                  <_c meTy="String" name="MessageType" sch="Http Receive Reply" type="7" version="1.2"/>
-                  <_c meTy="Date-Time" name="rcvdTimestamp" sch="Http Receive Reply" type="11" version="1.2"/>
-               </headerMessage>
-               <subconfig MessageType="http.text.message.type" _version="1.1" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
-               <bodyMessage assocdefid="Text" name="Text" sch="Text" type="12" version="1.2">
-                  <fieldActionGroup>
-                     <fieldAction type="1">
-                        <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                     </fieldAction>
-                  </fieldActionGroup>
-                  <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="JSON.nodeformatter" sch="Text" type="12" version="1.2">
-                     <fieldExpander fieldExpanderID="JSON.fieldexpander" fieldSchema="JSON" fieldSchemaRoot="Object"/>
-                     <contentTree>{"status":null,"message":""}<defaultActions>
-                           <defaultMessageActions>
-                              <fieldActionGroup>
-                                 <fieldAction type="1">
-                                    <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
-                                 </fieldAction>
-                                 <fieldAction type="1">
-                                    <fieldAction type="5"/>
-                                 </fieldAction>
-                                 <fieldAction type="1">
-                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
-                                 </fieldAction>
-                              </fieldActionGroup>
-                           </defaultMessageActions>
-                           <defaultScalarActions>
-                              <fieldActionGroup>
-                                 <fieldAction type="1">
+                        <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version" type="7"
+                                value="" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
                                     <fieldAction type="0"/>
-                                 </fieldAction>
-                                 <fieldAction type="1">
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c meTy="String" name="Accept" type="7"
+                                    value="*/*" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="*/*" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                type="8" value="true" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                    </headerMessage>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="7" coreTypeName="String"
+                            name="text"
+                            nodeFormatter="rest_nodeformatter"
+                            sch="Text" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="rest_fieldexpander"
+                                fieldSchema="-6be1505e:170e2dbe211:-6ce9:0:-332410441" fieldSchemaRoot="GET /rest/projects/{projid}/jobs/{jobId}"/>
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction type="4"/>
+                                </fieldAction>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c
+                                assocdefid="GET /rest/projects/{projid}/jobs/{jobId}"
+                                name="GET /rest/projects/{projid}/jobs/{jobId}"
+                                sch="-6be1505e:170e2dbe211:-6ce9:0:-332410441"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c name="projid"
+                                    sch="-6be1505e:170e2dbe211:-6ce9:0:-332410441"
+                                    type="3" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%projectId%%" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c name="jobId"
+                                    sch="-6be1505e:170e2dbe211:-6ce9:0:-332410441"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="%%id%%" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="45715af3:170e35c8902:-76e0"
+                selfDescribing="Receive and validate a response to the request you have sent."
+                type="receive_reply_action" version="1.1">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; using schema &quot;Text&quot; timeout %%timeout%%ms"
+                    sendRequestID="45715af3:170e35c8902:-76e4"
+                    timeout="%%timeout%%" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
+                    <headerMessage assocdefid="Http Receive Reply"
+                        meTy="Message" name="" sch="Http Receive Reply"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="true"
+                                    ignoreExtra="true"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="StatusCode"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction exp="200" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="ReasonPhrase"
+                            sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="String" name="MessageType"
+                            sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="Http Receive Reply" type="11" version="1.2"/>
+                    </headerMessage>
+                    <subconfig MessageType="http.text.message.type"
+                        _version="1.1" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="7" coreTypeName="String"
+                            name="text"
+                            nodeFormatter="JSON.nodeformatter"
+                            sch="Text" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="JSON.fieldexpander"
+                                fieldSchema="JSON" fieldSchemaRoot="Object"/>
+                            <contentTree>{"status":null,"message":""}<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
                                     <fieldAction type="5"/>
-                                 </fieldAction>
-                                 <fieldAction type="1">
-                                    <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
-                                 </fieldAction>
-                              </fieldActionGroup>
-                           </defaultScalarActions>
-                        </defaultActions>
-                        <updates>
-                           <setAction index="0" path="/text/Object" replaceActionType="100" replaceOuterType="1">
-                              <fieldAction type="1">
-                                 <fieldAction anyOrder="true" ignoreExtra="true" ignoreNonPresent="false" type="100"/>
-                              </fieldAction>
-                           </setAction>
-                           <updateField path="/text/Object">
-                              <_c assocdefid="Object"/>
-                           </updateField>
-                           <setAction index="0" path="/text/Object/status" replaceActionType="0" replaceOuterType="1">
-                              <fieldAction type="1">
-                                 <fieldAction type="9"/>
-                              </fieldAction>
-                           </setAction>
-                           <setAction index="0" path="/text/Object/status">
-                              <fieldAction description="Store copy of field in tag 'status'" tN="status" type="2">
-                                 <dataAction type="Copy"/>
-                              </fieldAction>
-                           </setAction>
-                           <setAction index="1" path="/text/Object/message" replaceActionType="0" replaceOuterType="1">
-                              <fieldAction enabled="false" type="1">
-                                 <fieldAction enabled="false" type="0"/>
-                              </fieldAction>
-                           </setAction>
-                           <setAction index="1" path="/text/Object/message">
-                              <fieldAction description="Store copy of field in tag 'message'" tN="message" type="2">
-                                 <dataAction type="Copy"/>
-                              </fieldAction>
-                           </setAction>
-                        </updates>
-                     </contentTree>
-                     <fieldActionGroup>
-                        <fieldAction type="1">
-                           <fieldAction type="7"/>
-                        </fieldAction>
-                     </fieldActionGroup>
-                  </_c>
-               </bodyMessage>
-            </resourceConfig>
-         </editableResource>
-      </testTree>
-      <tagDataStore inputMode="SELECT" outputMode="SELECT">
-         <tag defaultValue="" description="" name="id">
-            <tagProps>
-               <prop key="interfaceInput" value="true"/>
-            </tagProps>
-         </tag>
-         <tag defaultValue="" description="" name="projectId">
-            <tagProps>
-               <prop key="interfaceInput" value="true"/>
-            </tagProps>
-         </tag>
-         <tag defaultValue="" description="" name="status">
-            <tagProps>
-               <prop key="interfaceOutput" value="true"/>
-            </tagProps>
-         </tag>
-         <tag defaultValue="" description="" name="message">
-            <tagProps>
-               <prop key="interfaceOutput" value="true"/>
-            </tagProps>
-         </tag>
-      </tagDataStore>
-      <testprops messageClearance="false"/>
-   </resourceConfig>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                </defaultActions>
+                                <updates>
+                                    <setAction index="0"
+                                    path="/text/Object"
+                                    replaceActionType="100" replaceOuterType="1">
+                                    <fieldAction type="1">
+                                    <fieldAction anyOrder="true"
+                                    ignoreExtra="true"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <updateField path="/text/Object">
+                                    <_c assocdefid="Object"/>
+                                    </updateField>
+                                    <setAction index="0"
+                                    path="/text/Object/status"
+                                    replaceActionType="0" replaceOuterType="1">
+                                    <fieldAction type="1">
+                                    <fieldAction type="9"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="0" path="/text/Object/status">
+                                    <fieldAction
+                                    description="Store copy of field in tag 'status'"
+                                    tN="status" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="1"
+                                    path="/text/Object/message"
+                                    replaceActionType="0" replaceOuterType="1">
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="1" path="/text/Object/message">
+                                    <fieldAction
+                                    description="Store copy of field in tag 'message'"
+                                    tN="message" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </setAction>
+                                </updates>
+                            </contentTree>
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="SELECT" outputMode="SELECT">
+            <tag defaultValue="" description="" name="id">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="projectId">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="status">
+                <tagProps>
+                    <prop key="interfaceOutput" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="message">
+                <tagProps>
+                    <prop key="interfaceOutput" value="true"/>
+                </tagProps>
+            </tag>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
 </editableResource>

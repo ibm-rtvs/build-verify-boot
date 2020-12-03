@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1584360912842"
     createdUser="Build Verification" id="-6be1505e:170e2dbe211:-6bbd"
-    type="test_resource" updatedTimestamp="1600245131345"
-    updatedUser="Santosh" version="1.1">
+    type="test_resource" updatedTimestamp="1607009929260"
+    updatedUser="Build Verification" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -194,9 +194,9 @@
                 type="receive_reply_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                 <resourceConfig description="" formatter="HTTP_Message"
-                    name="&quot;Text&quot; using schema &quot;Text&quot; timeout 15000ms"
+                    name="&quot;Text&quot; using schema &quot;Text&quot; timeout %%timeout%%ms"
                     sendRequestID="-6be1505e:170e2dbe211:-6bbb"
-                    timeout="15000" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
+                    timeout="%%timeout%%" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
                     <headerMessage assocdefid="Http Receive Reply"
                         meTy="Message" name="" sch="Http Receive Reply"
                         type="12" version="1.2">
@@ -223,10 +223,7 @@
                             sch="Http Receive Reply" type="11" version="1.2"/>
                     </headerMessage>
                     <subconfig MessageType="http.text.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
                     <bodyMessage assocdefid="Text" name="Text"
                         sch="Text" type="12" version="1.2">
                         <fieldActionGroup>
