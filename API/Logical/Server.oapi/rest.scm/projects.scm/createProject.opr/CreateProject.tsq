@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1584354303462"
     createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7dc1"
-    type="test_resource" updatedTimestamp="1606995407898"
+    type="test_resource" updatedTimestamp="1607594743506"
     updatedUser="Build Verification" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
@@ -320,7 +320,7 @@
                             <fieldExpander
                                 fieldExpanderID="JSON.fieldexpander"
                                 fieldSchema="-6be1505e:170e2dbe211:-7ec7:0:-1551637993" fieldSchemaRoot="https://dev.apps-crc.testing/v2/api-docs#/definitions/Project[Object]"/>
-                            <contentTree>{"parent":null,"partitionID":null,"slug":null,"archived":false,"created":null,"creator":null,"owners":[null],"description":"Used for Build Verification","discoverable":true,"id":null,"name":null}<defaultActions>
+                            <contentTree>{"archived":false,"created":null,"creator":null,"owners":[null],"description":"Used for Build Verification","discoverable":true,"id":null,"name":null}<defaultActions>
                                     <defaultMessageActions>
                                     <fieldActionGroup>
                                     <fieldAction type="1">
@@ -357,35 +357,14 @@
                                     <updateField path="/text/Object">
                                     <_c assocdefid="https://dev.apps-crc.testing/v2/api-docs#/definitions/Project[Object]"/>
                                     </updateField>
-                                    <setAction index="0"
-                                    path="/text/Object/parent"
-                                    replaceActionType="0" replaceOuterType="1">
-                                    <fieldAction type="1">
-                                    <fieldAction type="8"/>
-                                    </fieldAction>
-                                    </setAction>
                                     <setAction index="1"
-                                    path="/text/Object/partitionID"
-                                    replaceActionType="0" replaceOuterType="1">
-                                    <fieldAction type="1">
-                                    <fieldAction type="8"/>
-                                    </fieldAction>
-                                    </setAction>
-                                    <setAction index="2"
-                                    path="/text/Object/slug"
-                                    replaceActionType="0" replaceOuterType="1">
-                                    <fieldAction type="1">
-                                    <fieldAction type="8"/>
-                                    </fieldAction>
-                                    </setAction>
-                                    <setAction index="4"
                                     path="/text/Object/created"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction type="1">
                                     <fieldAction type="9"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="5"
+                                    <setAction index="2"
                                     path="/text/Object/creator"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction type="1">
@@ -406,27 +385,27 @@
                                     <updateField path="/text/Object/owners/0">
                                     <_c name="0"/>
                                     </updateField>
-                                    <setAction index="7" path="/text/Object/description">
+                                    <setAction index="4" path="/text/Object/description">
                                     <fieldAction type="0">
                                     <fieldAction
                                     exp="Used for Build Verification" type="0"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="9"
+                                    <setAction index="6"
                                     path="/text/Object/id"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction type="1">
                                     <fieldAction type="9"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="9" path="/text/Object/id">
+                                    <setAction index="6" path="/text/Object/id">
                                     <fieldAction
                                     description="Store copy of field in tag 'id'"
                                     tN="id" type="2">
                                     <dataAction type="Copy"/>
                                     </fieldAction>
                                     </setAction>
-                                    <setAction index="10"
+                                    <setAction index="7"
                                     path="/text/Object/name"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction type="1">
