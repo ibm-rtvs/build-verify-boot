@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1584353522750"
     createdUser="Build Verification" id="7f8cd6b9:170e2d43262:-7f6a"
-    type="environment_resource" updatedTimestamp="1606996550116"
+    type="environment_resource" updatedTimestamp="1612888799347"
     updatedUser="Build Verification" version="1.0">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
-        <environmentVariable evdescription="" key="ingress_host" value="master-i"/>
+        <environmentVariable evdescription="" key="ingress_host" value=""/>
         <environmentVariable evdescription="" key="refresh_token" value=""/>
         <environmentVariable evdescription="" key="repo_branch" value="master"/>
+        <environmentVariable evdescription="" key="repo_commitId" value=""/>
         <environmentVariable evdescription="" key="timeout" value="30000"/>
         <evbindings>
             <evbinding

@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1584360912842"
     createdUser="Build Verification" id="-6be1505e:170e2dbe211:-6bbd"
-    type="test_resource" updatedTimestamp="1606995364167"
+    type="test_resource" updatedTimestamp="1612888285845"
     updatedUser="Build Verification" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
+            <editableResource id="6f9fc6c3:1778798db89:-7d68"
+                selfDescribing="Execute a function and optionally tag the results. Use predefined functions, custom plug-ins and tagged data."
+                type="function_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" eval_type="Mozilla Rhino"
+                    function="tags[&quot;repo_commitId&quot;] || null" name="Run &quot;tags[&quot;repo_commitId&quot;] || null&quot;, store into&quot;requestedVersion&quot;">
+                    <fieldActionGroup>
+                        <fieldAction
+                            description="Store copy of field in tag 'newTag'"
+                            tN="requestedVersion" type="2">
+                            <dataAction type="Copy"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                </resourceConfig>
+            </editableResource>
             <editableResource id="-6be1505e:170e2dbe211:-6bbb"
                 selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
                 type="send_request_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                 <resourceConfig description="" formatter="HTTP_Message"
-                    name="&quot;Text&quot; on resource &quot;/rest/projects/%%projectId%%/jobs/&quot; using schema &quot;Text&quot; via &quot;HTTPS&quot;" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
+                    name="&quot;Text&quot; on resource &quot;/rest/projects/%%projectId%%/executions/&quot; using schema &quot;Text&quot; via &quot;HTTPS&quot;" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756">
                     <headerMessage assocdefid="Http Publish"
                         meTy="Message" name="" sch="Http Publish"
                         type="12" version="1.2">
@@ -32,11 +47,11 @@
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
                             type="7"
-                            value="/rest/projects/%%projectId%%/jobs/" version="1.2">
+                            value="/rest/projects/%%projectId%%/executions/" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
-                                    exp="/rest/projects/%%projectId%%/jobs/" type="0"/>
+                                    exp="/rest/projects/%%projectId%%/executions/" type="0"/>
                                 </fieldAction>
                             </fieldActionGroup>
                         </_c>
@@ -124,7 +139,7 @@
                             <fieldExpander
                                 fieldExpanderID="JSON.fieldexpander"
                                 fieldSchema="JSON" fieldSchemaRoot="Object"/>
-                            <contentTree>{"type":"%%assertType%%","ritEnv":"local","offlineToken":"%%refresh_token%%","filepath":"%%assertPath%%","assetName":"%%assetName%%","branchName":"%%repo_branch%%","assetId":"%%assetId%%"}<defaultActions>
+                            <contentTree>{"environment":"local","offlineToken":"%%refresh_token%%","testAsset":{"assetId":"%%assetId%%","revision":"%%repo_branch%%","requestedVersion":"%%requestedVersion%%"}}<defaultActions>
                                     <defaultMessageActions>
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
@@ -175,6 +190,9 @@
                                     <updateField path="/text/Object">
                                     <_c assocdefid="Object"/>
                                     </updateField>
+                                    <updateField path="/text/Object/testAsset/requestedVersion">
+                                    <_c optional="true"/>
+                                    </updateField>
                                 </updates>
                             </contentTree>
                             <fieldActionGroup>
@@ -223,7 +241,10 @@
                             sch="Http Receive Reply" type="11" version="1.2"/>
                     </headerMessage>
                     <subconfig MessageType="http.text.message.type"
-                        _version="1.1" formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
+                        URL="" _version="1.1" allowSubPath="false"
+                        consumerType="Participate" filterHeaders="false"
+                        filterMethod="false" filterResourcePath="false"
+                        formatter="HTTP_Message" transport="-6be1505e:170e2dbe211:-6ce9:1984149904:408339756"/>
                     <bodyMessage assocdefid="Text" name="Text"
                         sch="Text" type="12" version="1.2">
                         <fieldActionGroup>
@@ -407,6 +428,7 @@
             </editableResource>
         </testTree>
         <tagDataStore inputMode="SELECT" outputMode="NONE">
+            <tag defaultValue="" description="" name="requestedVersion"/>
             <tag defaultValue="" description="" name="assertType">
                 <tagProps>
                     <prop key="interfaceInput" value="true"/>

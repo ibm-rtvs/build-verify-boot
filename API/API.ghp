@@ -7,6 +7,7 @@
         <environmentVariable evdescription="" key="ingress_host" value=""/>
         <environmentVariable evdescription="" key="refresh_token" value=""/>
         <environmentVariable evdescription="" key="repo_branch" value=""/>
+        <environmentVariable evdescription="" key="repo_commitId" value=""/>
         <environmentVariable evdescription=""
             key="Server/AddOn-Registration-APIKey/AddOn-Registration-APIKey" value=""/>
         <environmentVariable evdescription="" key="timeout" value=""/>
@@ -17,7 +18,7 @@
         <dbConnectionParameters maxConnections="5" poolName="DefaultPoolName">
             <connectionParams ZOSEnv="false"
                 dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
-                dpsPass="#com.ghc.1!09de" driverClass=""
+                dpsPass="#com.ghc.1!f6ce" driverClass=""
                 password="#com.ghc.1!1567" schema="" url=""
                 useSsl="false" user="">
                 <dpsSsl useSsl="false"/>
