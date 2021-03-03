@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1584354303462"
     createdUser="Build Verification" id="-6be1505e:170e2dbe211:-7dc1"
-    type="test_resource" updatedTimestamp="1607594743506"
+    type="test_resource" updatedTimestamp="1614700456230"
     updatedUser="Build Verification" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
@@ -320,7 +320,7 @@
                             <fieldExpander
                                 fieldExpanderID="JSON.fieldexpander"
                                 fieldSchema="-6be1505e:170e2dbe211:-7ec7:0:-1551637993" fieldSchemaRoot="https://dev.apps-crc.testing/v2/api-docs#/definitions/Project[Object]"/>
-                            <contentTree>{"archived":false,"created":null,"creator":null,"owners":[null],"description":"Used for Build Verification","discoverable":true,"id":null,"name":null}<defaultActions>
+                            <contentTree>{"archived":false,"created":null,"creator":null,"owners":[null],"description":"Used for Build Verification","discoverable":true,"id":null,"name":null,"spaceId":null}<defaultActions>
                                     <defaultMessageActions>
                                     <fieldActionGroup>
                                     <fieldAction type="1">
@@ -407,6 +407,13 @@
                                     </setAction>
                                     <setAction index="7"
                                     path="/text/Object/name"
+                                    replaceActionType="0" replaceOuterType="1">
+                                    <fieldAction type="1">
+                                    <fieldAction type="9"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    <setAction index="8"
+                                    path="/text/Object/spaceId"
                                     replaceActionType="0" replaceOuterType="1">
                                     <fieldAction type="1">
                                     <fieldAction type="9"/>
